@@ -21,9 +21,13 @@ Link  Website : https://blog.thanawatgulati.com
 ```$ git clone https://github.com/thanawatgulati/thanawatgulati-blog.git```
 #### Install dependencies
 ```$ yarn ```
+
  .
+
  .
+
  .
+ 
  .
 
 # Demo 
