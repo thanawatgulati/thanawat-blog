@@ -12,22 +12,30 @@ Link  Website : https://blog.thanawatgulati.com
 # Install and Usage
 ## 1. Install NODEJS
 #### On MacOS
-```$ brew install node ```
+```
+$ brew install node 
+```
 ## 2. Install Yarn
 #### On MacOS
-```$ brew install yarn ```
+```
+$ brew install yarn 
+```
 ## 3. Configure 
 #### Clone a source first
-```$ git clone https://github.com/thanawatgulati/thanawatgulati-blog.git```
+```
+$ git clone https://github.com/thanawatgulati/thanawatgulati-blog.git
+```
 #### Install dependencies
-```$ yarn ```
+```
+$ yarn
+```
 
  .
 
  .
 
  .
- 
+
  .
 
 # Demo 
