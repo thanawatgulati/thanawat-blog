@@ -1,6 +1,7 @@
 # Thanwat Gulati Blog 
 ## <span style='color:red'>*** This project under development ***</span> 
-![logo](src/images/logo-gatsby.png)
+<img src="./src/images/logo-gatsby.svg" alt="gatsby-logo" width="180"/>
+
 #### Thanawat Gulati Blog based on GatsbyJS 
 
 Link  Website : https://blog.thanawatgulati.com
