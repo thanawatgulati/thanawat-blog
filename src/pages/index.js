@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
+import Listings from "../components/Listings"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
@@ -15,6 +16,7 @@ const IndexPage = () => (
       <Image />
     </div>
     <Link to="/page-2/">Go to page 2</Link>
+    <Listings />
   </Layout>
 )
 
