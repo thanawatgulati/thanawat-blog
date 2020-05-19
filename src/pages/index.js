@@ -1,11 +1,11 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-// import Card from "../components/Card"
-// import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import Card from "../components/Card"
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 export const query = graphql`
   {
@@ -40,9 +40,10 @@ const IndexPage = ({ data }) => (
           </Link>
         </h2>
         <Image fluid={post.thumbnail.fluid} /> */}
+        <button className="py-y px-4 bg-blue-600">Button</button>
         <Card
           title={post.slug}
-          image={post.thumbnail.fluid.src}
+          image={post.thumbnail.fluid}
           description={documentToReactComponents(post.description.json)}
         />
       </div>

@@ -12,7 +12,6 @@ const Title = styled.h4`
 const Card = ({ title, image, description }) => (
   <div>
     <Image fluid={image} />
-    <div className="p8">Hello World</div>
     <Title>{title}</Title>
     <p>{description}</p>
   </div>
