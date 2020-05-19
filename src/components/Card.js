@@ -2,8 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 // import styled from "styled-components"
 import Image from "gatsby-image"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
 
 const Card = ({ title, image, description, slug }) => (
   <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2">

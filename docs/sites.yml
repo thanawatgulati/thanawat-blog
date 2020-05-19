@@ -1,0 +1,26 @@
+- title: Testing - Thanawat Gulati
+
+  # this is the URL that is linked from the showcase
+  main_url: https://testing.thanawatgulati.com
+
+  # this URL is used to generate a screenshot
+  url: https://testing.thanawatgulati.com
+
+  # optional: for open-source sites, this URL points to the repo that powers the site
+  source_url: https://github.com/thanawatgulati/thanawatgulati-blog
+
+  # optional: short paragraph describing the content and/or purpose of the site that will appear in the modal detail view and permalink views for your site
+  description: >
+    Thanawat Gulati - Blog , Work experience portfolio and more.
+
+  # You can list as many categories as you want here. Check list of Categories below in this doc!
+  # If you'd like to create a new category, simply list it here.
+  categories:
+    - Blog
+
+  # Add the name (developer or company) and URL (e.g. Twitter, GitHub, portfolio) to be used for attribution
+  built_by: Thanawat Gulati
+  built_by_url: https://twitter.com/mjamesvevo
+
+  # leave as false, the Gatsby site review board will choose featured sites quarterly
+  featured: false

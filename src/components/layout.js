@@ -34,10 +34,9 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <footer className="flex justify-center">
+          &copy; Copyright {new Date().getFullYear()} By
+          <a href="https://thanawatgulati.com">Thanawat Gulati</a>
         </footer>
       </div>
     </>
