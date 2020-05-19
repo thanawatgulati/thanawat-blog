@@ -1,20 +1,43 @@
 import React from "react"
 import { Link } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+// import Image from "../components/image"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+export const query = graphql`
+  {
+    posts: allContentfulPost {
+      nodes {
+        author {
+          name
+        }
+        title
+        thumbnail {
+          file {
+            url
+          }
+        }
+        slug
+      }
+    }
+  }
+`
+
+const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    {data.posts.nodes.map(post => (
+      <div key={`post-${post.slug}`}>
+        <h2>
+          <Link to={`/${post.slug}`}>
+            {post.title} ( with : {post.author.name})
+          </Link>
+        </h2>
+        <img src={`https:${post.thumbnail.file.url}`} />
+      </div>
+    ))}
   </Layout>
 )
 
