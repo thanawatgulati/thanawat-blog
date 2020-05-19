@@ -1,9 +1,9 @@
 require("dotenv").config()
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Thanawat Gulati`,
+    description: `Thanawat Gulati - Blog , Work experience portfolio and more`,
+    author: `@thanawatgulati`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -12,6 +12,18 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
+    },
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [require("tailwindcss")],
       },
     },
     `gatsby-transformer-sharp`,
@@ -34,6 +46,13 @@ module.exports = {
         spaceId: `qr4fdn101ci2`,
         // Learn about environment variables: https://gatsby.dev/env-vars
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
+    {
+      resolve: `gatsby-remark-images-contentful`,
+      options: {
+        maxWidth: 590,
+        loading: "lazy",
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

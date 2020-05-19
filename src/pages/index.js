@@ -3,8 +3,9 @@ import { Link } from "gatsby"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
-// import Image from "../components/image"
 import SEO from "../components/seo"
+// import Card from "../components/Card"
+// import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 export const query = graphql`
   {
@@ -15,11 +16,14 @@ export const query = graphql`
         }
         title
         thumbnail {
-          file {
-            url
+          fluid(maxWidth: 400) {
+            ...GatsbyContentfulFluid
           }
         }
         slug
+        description {
+          json
+        }
       }
     }
   }
@@ -30,12 +34,17 @@ const IndexPage = ({ data }) => (
     <SEO title="Home" />
     {data.posts.nodes.map(post => (
       <div key={`post-${post.slug}`}>
-        <h2>
+        {/* <h2>
           <Link to={`/${post.slug}`}>
             {post.title} ( with : {post.author.name})
           </Link>
         </h2>
-        <img src={`https:${post.thumbnail.file.url}`} />
+        <Image fluid={post.thumbnail.fluid} /> */}
+        <Card
+          title={post.slug}
+          image={post.thumbnail.fluid.src}
+          description={documentToReactComponents(post.description.json)}
+        />
       </div>
     ))}
   </Layout>
