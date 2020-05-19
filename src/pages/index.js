@@ -16,7 +16,7 @@ export const query = graphql`
         }
         title
         thumbnail {
-          fluid(maxWidth: 400) {
+          fluid {
             ...GatsbyContentfulFluid
           }
         }
@@ -32,22 +32,17 @@ export const query = graphql`
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    {data.posts.nodes.map(post => (
-      <div key={`post-${post.slug}`}>
-        {/* <h2>
-          <Link to={`/${post.slug}`}>
-            {post.title} ( with : {post.author.name})
-          </Link>
-        </h2>
-        <Image fluid={post.thumbnail.fluid} /> */}
-        <button className="py-y px-4 bg-blue-600">Button</button>
+    <div className="flex-row">
+      {data.posts.nodes.map(post => (
         <Card
-          title={post.slug}
+          key={`post-${post.slug}`}
+          slug={post.slug}
+          title={post.title}
           image={post.thumbnail.fluid}
           description={documentToReactComponents(post.description.json)}
         />
-      </div>
-    ))}
+      ))}
+    </div>
   </Layout>
 )
 
