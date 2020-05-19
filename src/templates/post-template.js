@@ -2,6 +2,8 @@ import React from "react"
 import { graphql } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { BLOCKS } from "@contentful/rich-text-types"
+import SEO from "../components/seo"
+import Layout from "../components/layout"
 
 export const query = graphql`
   query($slug: String!) {
@@ -29,7 +31,8 @@ export const query = graphql`
 `
 
 const PostTemplate = ({ data: { post } }) => (
-  <div>
+  <Layout>
+    <SEO title={post.title} />
     <h1>{post.title}</h1>
     <div>{documentToReactComponents(post.description.json)}</div>
     <div>
@@ -44,7 +47,7 @@ const PostTemplate = ({ data: { post } }) => (
         },
       })}
     </div>
-  </div>
+  </Layout>
 )
 
 export default PostTemplate

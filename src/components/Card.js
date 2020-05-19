@@ -1,17 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
-// import Layout from "../components/layout"
 // import styled from "styled-components"
 import Image from "gatsby-image"
-
-// const Image = styled.img``
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 const Card = ({ title, image, description, slug }) => (
-  <div>
-    <div
-      style={{ width: "350px" }}
-      className="max-w-sm rounded overflow-hidden shadow-lg"
-    >
+  <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2">
+    <div className="max-w-sm rounded overflow-hidden shadow-lg">
       <Image className="w-full" fluid={image} alt={image} />
       <div className="px-5 py-4">
         <Link to={`/${slug}`}>

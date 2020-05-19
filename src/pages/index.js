@@ -1,5 +1,4 @@
 import React from "react"
-// import { Link } from "gatsby"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
@@ -32,16 +31,18 @@ export const query = graphql`
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <div className="flex-row">
-      {data.posts.nodes.map(post => (
-        <Card
-          key={`post-${post.slug}`}
-          slug={post.slug}
-          title={post.title}
-          image={post.thumbnail.fluid}
-          description={documentToReactComponents(post.description.json)}
-        />
-      ))}
+    <div className="container my-12 mx-auto px-4 md:px-12">
+      <div class="flex flex-wrap -mx-1 lg:-mx-4">
+        {data.posts.nodes.map(post => (
+          <Card
+            key={`post-${post.slug}`}
+            slug={post.slug}
+            title={post.title}
+            image={post.thumbnail.fluid}
+            description={documentToReactComponents(post.description.json)}
+          />
+        ))}
+      </div>
     </div>
   </Layout>
 )
