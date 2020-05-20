@@ -33,19 +33,21 @@ export const query = graphql`
 const PostTemplate = ({ data: { post } }) => (
   <Layout>
     <SEO title={post.title} />
-    <h1>{post.title}</h1>
-    <div>{documentToReactComponents(post.description.json)}</div>
     <div>
-      {documentToReactComponents(post.content.json, {
-        renderNode: {
-          [BLOCKS.EMBEDDED_ASSET]: node => (
-            <img
-              src={`${node.data.target.fields.file["en-US"].url}?w=300&q=90`}
-              alt={node.data.target.fields.title["en-US"]}
-            />
-          ),
-        },
-      })}
+      <h1>{post.title}</h1>
+      <div>{documentToReactComponents(post.description.json)}</div>
+      <div>
+        {documentToReactComponents(post.content.json, {
+          renderNode: {
+            [BLOCKS.EMBEDDED_ASSET]: node => (
+              <img
+                src={`${node.data.target.fields.file["en-US"].url}?w=300&q=90`}
+                alt={node.data.target.fields.title["en-US"]}
+              />
+            ),
+          },
+        })}
+      </div>
     </div>
   </Layout>
 )

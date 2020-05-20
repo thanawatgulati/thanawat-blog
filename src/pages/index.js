@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Card from "../components/Card"
+import CardHead from "../components/CardHead"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 export const query = graphql`
