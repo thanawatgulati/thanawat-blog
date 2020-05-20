@@ -1,9 +1,11 @@
 import React from "react";
+import { Navbar } from "../components";
 
 const Index = () => {
   return (
     <div>
-      <h6>Hello Gatsby World</h6>
+      <Navbar />
+      <h1>Hello , Welcome To Gatsby World</h1>
     </div>
   );
 };
