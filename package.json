@@ -1,4 +1,11 @@
 {
+  "name": "Thanawat Gulati",
+  "description": "Blog Portfoilo and Work experience of Thanawat Gulati",
+  "author": {
+    "email": "contact@thanawatgulati.com",
+    "name": "Thanawat Gulati",
+    "url": "https://blog.thanawatgulati.com"
+  },
   "devDependencies": {
     "eslint": "^7.0.0",
     "eslint-plugin-react": "^7.20.0",
@@ -7,5 +14,12 @@
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
+  },
+  "scripts": {
+    "dev": "gatsby develop",
+    "build": "gatsby build"
+  },
+  "repository": {
+    "url": "https://github.com/thanawatgulati/thanawatgulati-blog/tree/new-2020-blog"
   }
 }
