@@ -1,7 +1,11 @@
 .bannerLeft {
   background-color: red;
   height: 350px;
+  background-image: url("/images/bannerLeft.jpg");
   border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 650px) {
