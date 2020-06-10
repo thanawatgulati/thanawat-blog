@@ -6,6 +6,10 @@ interface Props {}
 export default function BannerLeft({}: Props): ReactElement {
   return (
     <div className={styles.bannerLeft}>
+      <h1 className={styles.TextBannerLeft}>
+        Fronted <br /> Developer <br />
+        2020
+      </h1>
       <LazyLoad height={"100%"} once={true}>
         <img
           className={styles.imgBannerLeft}
