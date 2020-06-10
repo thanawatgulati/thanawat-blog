@@ -6,7 +6,7 @@ interface Props {}
 export default function BannerLeft({}: Props): ReactElement {
   return (
     <div className={styles.bannerLeft}>
-      <LazyLoad height={10} offset={10}>
+      <LazyLoad height={"100%"} offset={100}>
         <img
           className={styles.imgBannerLeft}
           src="/images/bannerLeft.jpg"
