@@ -1,7 +1,18 @@
 import React, { ReactElement } from "react";
-import stlyes from "../styles/bannerRight.module.css";
+import styles from "../styles/bannerRight.module.css";
+import LazyLoad from "react-lazyload";
 interface Props {}
 
 export default function BannerRight({}: Props): ReactElement {
-  return <div className={stlyes.bannerRight}></div>;
+  return (
+    <div className={styles.bannerRight}>
+      <LazyLoad height={20} offset={20}>
+        <img
+          className={styles.imgBannerRight}
+          src="/images/bannerRight.jpg"
+          alt="banner-left"
+        />
+      </LazyLoad>
+    </div>
+  );
 }
