@@ -3,3 +3,11 @@
   background-color: red;
   height: 350px;
 }
+
+@media only screen and (max-width: 650px) {
+  .bannerLeft {
+    width: 100%;
+    height: 200px;
+    background-color: pink;
+  }
+}
