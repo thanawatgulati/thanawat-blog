@@ -10,7 +10,7 @@ export default function Navbar({}: Props): ReactElement {
     <nav className={styles.nav}>
       <input type="checkbox" id={styles.check} />
       <label className={styles.checkbtn}>
-        <button
+        {/* <button
           className={styles.hamburg}
           onClick={() => {
             if (!action) {
@@ -23,7 +23,7 @@ export default function Navbar({}: Props): ReactElement {
           }}
         >
           <h4>🍔</h4>
-        </button>
+        </button> */}
       </label>
       <Link href="/">
         <label className={styles.logo}>G.THANAWAT</label>
