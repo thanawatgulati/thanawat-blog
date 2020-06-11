@@ -16,7 +16,16 @@ export default function Categories({}: Props): ReactElement {
           />
         </LazyLoad>
       </div>
-      <div className={styles.category}></div>
+      <div className={styles.category}>
+        <h3 className={styles.textCategory}>TECHNOLOGY</h3>
+        <LazyLoad offset={100} heigth={"100%"}>
+          <img
+            className={styles.imgCategory}
+            src="/images/technology.webp"
+            alt="life-style"
+          />
+        </LazyLoad>
+      </div>
       <div className={styles.category}></div>
       <div className={styles.category}></div>
     </div>
