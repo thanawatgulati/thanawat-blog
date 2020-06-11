@@ -1,4 +1,4 @@
-.bannerRight {
+#bannerRight {
   position: relative;
   background-color: black;
   height: 295px;
@@ -9,7 +9,7 @@
   text-align: center;
 }
 
-.imgBannerRight {
+#imgBannerRight {
   object-fit: cover;
   width: 100%;
   border-radius: 10px;
@@ -17,7 +17,7 @@
   height: 295px;
 }
 
-.TextBannerRight {
+#TextBannerRight {
   top: 50%;
   left: 50%;
   position: absolute;
@@ -28,10 +28,10 @@
 }
 
 @media only screen and (max-width: 650px) {
-  .bannerRight {
+  #bannerRight {
     height: 200px;
   }
-  .imgBannerRight {
+  #imgBannerRight {
     height: 200px;
   }
 }
