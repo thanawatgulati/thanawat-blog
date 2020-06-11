@@ -7,6 +7,10 @@ export default function BannerRight({}: Props): ReactElement {
   return (
     <div className={styles.bannerRight}>
       <LazyLoad height={"100%"} once={true}>
+        <h2 className={styles.TextBannerRight}>
+          TECH <br />
+          TO NIGHT
+        </h2>
         <img
           className={styles.imgBannerRight}
           src="/images/bannerRight.jpg"

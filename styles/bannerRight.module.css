@@ -1,10 +1,12 @@
 .bannerRight {
+  position: relative;
   background-color: black;
   height: 350px;
   border-radius: 10px;
   object-fit: cover;
   width: 100%;
   background-repeat: no-repeat;
+  text-align: center;
 }
 
 .imgBannerRight {
@@ -14,6 +16,17 @@
   opacity: 0.4;
   height: 350px;
 }
+
+.TextBannerRight {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin: auto;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
 @media only screen and (max-width: 650px) {
   .bannerRight {
     height: 200px;

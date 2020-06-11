@@ -2,6 +2,11 @@
   font-family: Kanit;
   src: url("../assets/fonts/Kanit-Bold.ttf");
 }
+
+@font-face {
+  font-family: Sarabun;
+  src: url("../assets/fonts/Sarabun-Regular.ttf");
+}
 h1,
 h2,
 h3,
@@ -11,14 +16,27 @@ h6 {
   font-family: Kanit;
 }
 
+body {
+  font-family: Sarabun;
+  font-size: 20px;
+}
+
 h1 {
   font-size: 50px;
   line-height: 100%;
+  letter-spacing: 2px;
+}
+h2 {
+  font-size: 45px;
+  list-style: 100%;
   letter-spacing: 2px;
 }
 
 @media only screen and (max-width: 650px) {
   h1 {
     font-size: 35px;
+  }
+  h2 {
+    font-size: 30px;
   }
 }
