@@ -7,10 +7,6 @@ export default function ({ Component, pageProps }: AppProps) {
     <div>
       <Head>
         <title>Blog - Thanawat Gulati</title>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap"
-          rel="stylesheet"
-        ></link>
       </Head>
       <div style={{ width: "80%", margin: "auto" }}>
         <Component {...pageProps} />
