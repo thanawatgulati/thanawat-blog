@@ -18,6 +18,10 @@ export default function index({}: Props): ReactElement {
         <Card />
         <Card />
         <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
       </div>
     </div>
   );

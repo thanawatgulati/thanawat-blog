@@ -1,4 +1,5 @@
 .containerBanner {
+  /* padding-top: 30px; */
   display: grid;
   grid-template-columns: 60% auto;
   grid-gap: 20px;
