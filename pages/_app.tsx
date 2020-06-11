@@ -8,7 +8,7 @@ export default function ({ Component, pageProps }: AppProps) {
       <Head>
         <title>Blog - Thanawat Gulati</title>
       </Head>
-      <div style={{ width: "80%", margin: "auto" }}>
+      <div>
         <Component {...pageProps} />
       </div>
     </div>
