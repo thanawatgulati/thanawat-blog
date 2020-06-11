@@ -23,7 +23,7 @@ h6 {
 
 body {
   font-family: Sarabun;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 h1 {
@@ -35,6 +35,32 @@ h2 {
   font-size: 45px;
   line-height: 100%;
   letter-spacing: 2px;
+}
+h3 {
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 2px;
+}
+h4 {
+  margin: 0px;
+  font-size: 35px;
+  line-height: 100%;
+  letter-spacing: 2px;
+}
+h5 {
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 2px;
+}
+h6 {
+  font-size: 25px;
+  line-height: 100%;
+  letter-spacing: 2px;
+}
+
+span {
+  margin: 0px;
+  line-height: 100%;
 }
 
 @media only screen and (max-width: 650px) {
