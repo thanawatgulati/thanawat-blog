@@ -13,7 +13,7 @@ export default function BannerRight({}: Props): ReactElement {
         </h2>
         <img
           className={styles.imgBannerRight}
-          src="/images/bannerRight.jpg"
+          src="/images/bannerRight.webp"
           alt="banner-left"
         />
       </LazyLoad>
