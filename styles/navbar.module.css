@@ -3,6 +3,7 @@
   font-size: 35px;
   font-family: Kanit;
   font-weight: 800;
+  cursor: pointer;
 }
 
 .nav {
@@ -22,7 +23,7 @@
   padding: 0px 40px;
 }
 .a {
-  color: #fff;
+  color: #a43131;
   text-decoration: none;
 }
 .checkbtn {
@@ -44,6 +45,9 @@
   .checkbtn {
     display: block;
     margin-right: 40px;
+  }
+  .a {
+    color: #fff;
   }
   .ul {
     text-align: center;

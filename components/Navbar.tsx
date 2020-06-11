@@ -9,7 +9,9 @@ export default function Navbar({}: Props): ReactElement {
     <nav className={styles.nav}>
       <input type="checkbox" id={styles.check} />
       <label className={styles.checkbtn}>🍔</label>
-      <label className={styles.logo}>G.THANAWAT</label>
+      <Link href="/">
+        <label className={styles.logo}>G.THANAWAT</label>
+      </Link>
       <ul className={styles.ul}>
         <li className={styles.li}>
           <Link href="/">
