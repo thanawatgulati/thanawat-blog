@@ -13,7 +13,7 @@ export default function BannerLeft({}: Props): ReactElement {
       <LazyLoad height={"100%"} once={true}>
         <img
           className={styles.imgBannerLeft}
-          src="/images/bannerLeft.jpg"
+          src="/images/bannerLeft.webp"
           alt="banner-left"
         />
       </LazyLoad>
