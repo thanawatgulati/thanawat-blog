@@ -10,8 +10,8 @@
 .TextBannerLeft {
   position: absolute;
   color: white;
-  bottom: 20px;
-  padding: 20px;
+  bottom: 0px;
+  padding: 30px;
   margin: auto;
   z-index: 1;
 }
