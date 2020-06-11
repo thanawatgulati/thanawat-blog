@@ -7,6 +7,8 @@ interface Props {}
 export default function Navbar({}: Props): ReactElement {
   return (
     <nav className={styles.nav}>
+      <input type="checkbox" id={styles.check} />
+      <label className={styles.checkbtn}>🍔</label>
       <label className={styles.logo}>G.THANAWAT</label>
       <ul className={styles.ul}>
         <li className={styles.li}>
