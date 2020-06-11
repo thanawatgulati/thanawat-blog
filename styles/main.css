@@ -1,11 +1,11 @@
 @font-face {
   font-family: Kanit;
-  src: url("../assets/fonts/Kanit-Bold.ttf");
+  src: local("../assets/fonts/Kanit-Bold.ttf");
 }
 
 @font-face {
   font-family: Sarabun;
-  src: url("../assets/fonts/Sarabun-Regular.ttf");
+  src: local("../assets/fonts/Sarabun-Regular.ttf");
 }
 h1,
 h2,
