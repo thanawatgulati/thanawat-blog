@@ -1,5 +1,4 @@
 .containerBanner {
-  /* padding-top: 30px; */
   display: grid;
   grid-template-columns: 60% auto;
   grid-gap: 20px;
@@ -16,6 +15,7 @@
 @media only screen and (max-width: 650px) {
   .containerBanner {
     grid-template-columns: 100%;
+    margin: auto;
   }
   .containerCard {
     grid-template-columns: 100%;

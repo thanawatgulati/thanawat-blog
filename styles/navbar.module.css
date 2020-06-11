@@ -3,7 +3,6 @@
   font-size: 35px;
   font-family: Kanit;
   font-weight: 800;
-  cursor: pointer;
 }
 
 .nav {
@@ -44,10 +43,7 @@
   }
   .checkbtn {
     display: block;
-    margin-right: 40px;
-  }
-  .a {
-    color: #fff;
+    margin: auto;
   }
   .ul {
     text-align: center;
@@ -57,15 +53,21 @@
     background-color: #a43131;
     z-index: 2;
     left: -120%;
+    text-align: center;
     transition: all 0.5s;
   }
   .nav .ul .li {
     display: block;
     font-size: 25px;
   }
-  #check {
-    display: block;
-    z-index: 0;
+  .a {
+    color: #fff;
+  }
+  .hamburg {
+    font-size: 25px;
+    border: none;
+    background-color: white;
+    outline: none;
   }
   #check:checked ~ ul {
     left: 0;
