@@ -22,7 +22,7 @@ export default function Categories({}: Props): ReactElement {
           <img
             className={styles.imgCategory}
             src="/images/technology.webp"
-            alt="life-style"
+            alt="technology"
           />
         </LazyLoad>
       </div>
@@ -32,7 +32,7 @@ export default function Categories({}: Props): ReactElement {
           <img
             className={styles.imgCategory}
             src="/images/review.webp"
-            alt="life-style"
+            alt="review"
           />
         </LazyLoad>
       </div>
@@ -42,7 +42,7 @@ export default function Categories({}: Props): ReactElement {
           <img
             className={styles.imgCategory}
             src="/images/programming.webp"
-            alt="life-style"
+            alt="programming"
           />
         </LazyLoad>
       </div>
