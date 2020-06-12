@@ -2,6 +2,7 @@ import { AppProps } from "next/app";
 import Head from "next/head";
 import "../styles/main.css";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 export default function ({ Component, pageProps }: AppProps) {
   return (
@@ -13,6 +14,7 @@ export default function ({ Component, pageProps }: AppProps) {
         <Navbar />
         <Component {...pageProps} />
       </div>
+      <Footer />
     </div>
   );
 }
