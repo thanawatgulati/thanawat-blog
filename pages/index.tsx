@@ -5,6 +5,7 @@ import styles from "../styles/index.module.css";
 import Card from "../components/Card";
 import Categories from "../components/Categories";
 import { GetServerSideProps, InferGetServerSidePropsType } from "next";
+import { Client } from "../prismic-configuration";
 
 export default function index({
   post,
@@ -17,22 +18,15 @@ export default function index({
         <BannerRight />
       </div>
       <div className={styles.containerCard}>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {/* {post.map((r) => console.log(r))} */}
       </div>
       <Categories />
     </div>
   );
 }
 
-export const getServerSideProps: GetServerSideProps = async () => {
-  const res = await fetch("https://thanawatgulati-blog.cdn.prismic.io/api/v1");
-  const data = await res.json();
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const req = context.req;
+  const data = await "";
   return { props: { post: data } };
 };
