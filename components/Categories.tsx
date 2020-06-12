@@ -27,7 +27,7 @@ export default function Categories({}: Props): ReactElement {
         </LazyLoad>
       </div>
       <div className={styles.category}>
-        <h3 className={styles.textCategory}>Review</h3>
+        <h3 className={styles.textCategory}>REVIEW</h3>
         <LazyLoad offset={100} heigth={"100%"}>
           <img
             className={styles.imgCategory}
@@ -37,7 +37,7 @@ export default function Categories({}: Props): ReactElement {
         </LazyLoad>
       </div>
       <div className={styles.category}>
-        <h3 className={styles.textCategory}>Programming</h3>
+        <h3 className={styles.textCategory}>PROGRAMMING</h3>
         <LazyLoad offset={100} heigth={"100%"}>
           <img
             className={styles.imgCategory}
