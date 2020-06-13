@@ -5,13 +5,15 @@ import styles from "../styles/index.module.css";
 import Card from "../components/Card";
 import Categories from "../components/Categories";
 import { GetServerSideProps, InferGetServerSidePropsType } from "next";
+import { gql } from "apollo-boost";
+import { client } from "../graphql";
 
 export default function index({
   post,
 }: InferGetServerSidePropsType<typeof getServerSideProps>): ReactElement {
   return (
     <div>
-      {console.log(post)}
+      {console.log(post.data.allAuthor)}
       <div className={styles.containerBanner}>
         <BannerLeft />
         <BannerRight />
@@ -25,7 +27,14 @@ export default function index({
 }
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-  const req = context.req;
-  const data = await "";
-  return { props: { post: data } };
+  const res = await client.query({
+    query: gql`
+      {
+        allPost {
+          _id
+        }
+      }
+    `,
+  });
+  return { props: { post: res } };
 };
