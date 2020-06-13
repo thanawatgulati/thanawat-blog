@@ -5,7 +5,6 @@ import styles from "../styles/index.module.css";
 import Card from "../components/Card";
 import Categories from "../components/Categories";
 import { GetServerSideProps, InferGetServerSidePropsType } from "next";
-import { Client } from "../prismic-configuration";
 
 export default function index({
   post,
